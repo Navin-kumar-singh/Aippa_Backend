@@ -94,6 +94,7 @@ async function loginController(req, res) {
               return res.json({
                 status: "warning",
                 message:
+                
                   "Account is inactivate contact with yuvamanthan team for more info email: connect@yuvamanthan.org",
                 description:
                   "Yuvamanthan team will contact with you soon to guide you further to your account login",
