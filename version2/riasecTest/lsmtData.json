@@ -1,0 +1,1380 @@
+[
+    {
+        "question": "I do my assignments in innovative ways.",
+        "type": "creativity",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I find it difficult to identify my strengths and weaknesses.",
+        "type": "selfAwareness",
+        "option": [
+            {
+                "text": "Never",
+                "score": 5
+            },
+            {
+                "text": "Rarely",
+                "score": 4
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 2
+            },
+            {
+                "text": "Always",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "question": "During a conversation, I observe the other person's body language.",
+        "type": "communication",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am able to sort out vital information while working on my assignments.",
+        "type": "criticalThinking",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I continue to work even when faced with difficult situations.",
+        "type": "resilience",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I recognize when someone else is angry, even if they try to hide it.",
+        "type": "empathy",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I remain hopeful when faced with a difficult situation.",
+        "type": "resilience",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I can think of many creative and novel ways to use a brick in an art project.",
+        "type": "creativity",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am able to focus and listen to my friend even when my classmates are distracting us.",
+        "type": "communication",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "When involved in a disagreement with friends on what game to play, I also consider their interests.",
+        "type": "negotiation",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am aware of areas that I need to strengthen in order to make more friends.",
+        "type": "selfawareness",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I find development of novel and new ideas challenging.",
+        "type": "creativity",
+        "option": [
+            {
+                "text": "Never",
+                "score": 5
+            },
+            {
+                "text": "Rarely",
+                "score": 4
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 2
+            },
+            {
+                "text": "Always",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "question": "While undertaking a task, I am able to analyze the critical information I have collected.",
+        "type": "criticalThinking",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I make up my mind after considering different choices.",
+        "type": "decisionmaking",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am aware of my moods and feelings.",
+        "type": "selfawareness",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "When facing a challenge, I consider every aspect related to it in order to find a solution.",
+        "type": "problemsolving",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "Whenever I see a homeless person in my neighborhood, I feel bad and take steps to help.",
+        "type": "empathy",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "Even when faced with criticism for a task, I do not lose interest in it.",
+        "type": "resilience",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I volunteer to help my parents at home in all activities.",
+        "type": "participation",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I find it daunting to express myself when I am in an unknown situation.",
+        "type": "communication",
+        "option": [
+            {
+                "text": "Never",
+                "score": 5
+            },
+            {
+                "text": "Rarely",
+                "score": 4
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 2
+            },
+            {
+                "text": "Always",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "question": "I am able to recognize my emotions and how they influence my actions.",
+        "type": "selfawareness",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I use my imagination to develop innovative ideas.",
+        "type": "creativity",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am easily able to communicate with acquaintances during a family function.",
+        "type": "communication",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am able to critique ideas proposed by others using reasoning.",
+        "type": "criticalthinking",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "When resolving a problem, I consider all possible solutions.",
+        "type": "problemsolving",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "It saddens me to see my aunt unhappy.",
+        "type": "empathy",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am able to easily generate many innovative ideas.",
+        "type": "creativity",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I do not think my actions will shape what happens in my life.",
+        "type": "selfawareness",
+        "option": [
+            {
+                "text": "Never",
+                "score": 5
+            },
+            {
+                "text": "Rarely",
+                "score": 4
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 2
+            },
+            {
+                "text": "Always",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "question": "I willingly volunteer for different activities in my community.",
+        "type": "participation",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I make judgments based on factual information.",
+        "type": "criticalthinking",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "In my daily life, I am unable to find solutions to my problems.",
+        "type": "problemsolving",
+        "option": [
+            {
+                "text": "Never",
+                "score": 5
+            },
+            {
+                "text": "Rarely",
+                "score": 4
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 2
+            },
+            {
+                "text": "Always",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "question": "I show concern and intervene when a person is treated unfairly in my neighborhood.",
+        "type": "empathy",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am able to deal with a stressful situation.",
+        "type": "resilience",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I analyze my choices and prioritize them while making a decision.",
+        "type": "decisionmaking",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am happy when my class teachers praise my friend.",
+        "type": "empathy",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am challenged when asked to suggest many creative and novel ideas at home and school.",
+        "type": "creativity",
+        "option": [
+            {
+                "text": "Never",
+                "score": 5
+            },
+            {
+                "text": "Rarely",
+                "score": 4
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 2
+            },
+            {
+                "text": "Always",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "question": "I listen to others without interrupting them during a conversation.",
+        "type": "communication",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I formulate my opinions after looking at a situation from different perspectives.",
+        "type": "criticalthinking",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I choose my words with utmost consideration while speaking to others.",
+        "type": "communication",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I find ways to study even when my routine is disturbed.",
+        "type": "resilience",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am aware of my emotions during difficult situations.",
+        "type": "selfawareness",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I work with different materials to create innovative models for my school projects.",
+        "type": "creativity",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I do not consider the possible consequences of my actions while taking decisions.",
+        "type": "decisionmaking",
+        "option": [
+            {
+                "text": "Never",
+                "score": 5
+            },
+            {
+                "text": "Rarely",
+                "score": 4
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 2
+            },
+            {
+                "text": "Always",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "question": "I am actively involved in making family holiday plans.",
+        "type": "participation",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I find paying attention to the responses of others when engaging with them difficult.",
+        "type": "communication",
+        "option": [
+            {
+                "text": "Never",
+                "score": 5
+            },
+            {
+                "text": "Rarely",
+                "score": 4
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 2
+            },
+            {
+                "text": "Always",
+                "score": 1
+            }
+        ]
+    },
+    {
+        "question": "I discuss and convince others of my views when there is a disagreement.",
+        "type": "negotiation",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am able to suggest new ideas to solve problems during discussions.",
+        "type": "resilience",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I spend time weighing all my choices when making decisions in my daily life.",
+        "type": "decisionmaking",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am able to arrive at the best solution after considering merits and demerits of possible options.",
+        "type": "problemsolving",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I am aware that my grades reflect how prepared I was for my exam.",
+        "type": "selfawareness",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I combine ideas to create new ways of doing things.",
+        "type": "creativity",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "When scolding my friend, I consider how my friend might be feeling.",
+        "type": "empathy",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    },
+    {
+        "question": "I take out time to improve my neighbourhood.",
+        "type": "participation",
+        "option": [
+            {
+                "text": "Never",
+                "score": 1
+            },
+            {
+                "text": "Rarely",
+                "score": 2
+            },
+            {
+                "text": "Sometimes",
+                "score": 3
+            },
+            {
+                "text": "Often",
+                "score": 4
+            },
+            {
+                "text": "Always",
+                "score": 5
+            }
+        ]
+    }
+]

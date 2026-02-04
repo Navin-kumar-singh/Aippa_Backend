@@ -1,0 +1,502 @@
+<!DOCTYPE HTML
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+    <title></title>
+
+    <style type="text/css">
+        .top_header_sec{
+            display: flex;
+            justify-content: space-between !important;
+            align-items: center !important;
+            padding-top: 20px;
+        }
+        .register_btn {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 21px;
+            text-shadow: 0px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+            padding: 0;
+            margin: 0;
+            appearance: none;
+            border: none;
+            outline: none;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            z-index: 1;
+            border-radius: 25px;
+            color: #fff;
+            background: #5E17EB;
+            box-shadow: 0px 4px 12px rgba(9, 12, 60, 0.15), 0px 2px 8px rgba(9, 12, 60, 0.15), 0px 1px 3px;
+        }
+
+        .register_btn a {
+            display: block;
+            padding: 12px 24px;
+            border-radius: inherit;
+            overflow: hidden;
+            position: relative;
+            text-decoration: none !important;
+            color: white !important;
+            background-image: linear-gradient(to bottom, var(--fancy-button-shine-top), transparent 8px);
+            background-position: 0 -6px;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .register_btn a:before,
+        .register_btn a:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            transition: opacity 0.25s, transform 0.25s;
+            will-change: transform;
+        }
+
+        .register_btn a:before {
+            width: 92px;
+            height: 8px;
+            bottom: -4px;
+            opacity: 0.75;
+            filter: blur(6px);
+        }
+
+        .register_btn a:after {
+            width: 112px;
+            height: 1px;
+            bottom: 0;
+            opacity: 0.9;
+            filter: blur(1px);
+        }
+
+        .register_btn:hover a:before {
+            opacity: 0.8;
+        }
+
+        .register_btn:hover a:before {
+            transform: translateX(-50%) scale(1.25);
+        }
+
+        .register_btn:hover a:after {
+            opacity: 1;
+        }
+
+        @media only screen and (min-width: 620px) {
+            .u-row {
+                width: 600px !important;
+            }
+
+            .u-row .u-col {
+                vertical-align: top;
+            }
+
+            .u-row .u-col-50 {
+                width: 300px !important;
+            }
+
+            .u-row .u-col-100 {
+                width: 600px !important;
+            }
+
+        }
+
+        @media (max-width: 620px) {
+            .u-row-container {
+                max-width: 100% !important;
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+
+            .u-row .u-col {
+                min-width: 320px !important;
+                max-width: 100% !important;
+                display: block !important;
+            }
+
+            .u-row {
+                width: 100% !important;
+            }
+
+            .u-col {
+                width: 100% !important;
+            }
+
+            .u-col>div {
+                margin: 0 auto;
+            }
+            .message_body {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins';
+        }
+
+        table,
+        tr,
+        td {
+            vertical-align: top;
+            border-collapse: collapse;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .ie-container table,
+        .mso-container table {
+            table-layout: fixed;
+        }
+
+        * {
+            line-height: inherit;
+        }
+
+        a[x-apple-data-detectors='true'] {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+
+        table,
+        td {
+            color: #000000;
+        }
+
+        #u_body a {
+            color: #7e27ec;
+            text-decoration: underline;
+        }
+
+        .message_body {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .main_header {
+            font-size: 24px;
+            display: flex;
+            font-weight: 900;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .inner_Title {
+            margin-right: 50px;
+            margin-left: 50px;
+            color: #646262;
+            text-align: center;
+        }
+
+        .inner_image {
+            margin: auto;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .powered {
+            margin-top: 15px;
+            color: #646262;
+            font-size: 17px;
+        }
+
+        .bottom_title {
+            margin-top: 16px;
+            margin-left: 50px;
+            margin-right: 50px;
+            color: #646262;
+        }
+
+        .note_title {
+            height: 35px;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            /* margin-left: 10px;
+            margin-right: 10px; */
+            background-color: #240849;
+            color: #ffffff;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        @media (max-width: 376px) {
+            .main_header {
+                font-size: 18px;
+                display: flex;
+                font-weight: bolder;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .inner_Title {
+                /* margin-top: 40px; */
+                margin-right: 20px;
+                /* margin-bottom: 0; */
+                margin-left: 20px;
+                color: #545454;
+                text-align: center;
+            }
+
+            .bottom_title {
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                text-align: center;
+                color: #646262;
+            }
+
+            #u_body a {
+                font-size: 14px;
+                color: #7e27ec;
+                text-decoration: underline;
+            }
+            .message_body {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        }
+    </style>
+
+
+
+    <!--[if !mso]><!-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+
+</head>
+
+<body class="clean-body u_body"
+    style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #f9f9f9;color: #000000">
+    <!--[if IE]><div class="ie-container"><![endif]-->
+    <!--[if mso]><div class="mso-container"><![endif]-->
+    <table id="u_body"
+        style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #f9f9f9;width:100%"
+        cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr style="vertical-align: top">
+                <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+                    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #f9f9f9;"><![endif]-->
+
+
+                    <div class="u-row-container" style="padding: 0px;background-color: #f9f9f9">
+                        <div class="u-row"
+                            style="Margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: #f9f9f9;">
+                            <div
+                                style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+                                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: #f9f9f9;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr style="background-color: #f9f9f9;"><![endif]-->
+
+                                <!--[if (mso)|(IE)]><td align="center" width="600" style="width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+                                <div class="u-col u-col-100"
+                                    style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                                    <div style="height: 100%;width: 100% !important;">
+                                        <!--[if (!mso)&(!IE)]><!-->
+                                        <div
+                                            style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;">
+                                            <!--<![endif]-->
+
+                                            <!-- <table style="font-family:'Lato',sans-serif;" role="presentation"
+                                                cellpadding="0" cellspacing="0" width="100%" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="overflow-wrap:break-word;word-break:break-word;padding:15px;font-family:'Lato',sans-serif;"
+                                                            align="left">
+
+                                                            <table height="0px" align="center" border="0"
+                                                                cellpadding="0" cellspacing="0" width="100%"
+                                                                style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 1px solid #f9f9f9;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                                                                <tbody>
+                                                                    <tr style="vertical-align: top">
+                                                                        <td
+                                                                            style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                                                                            <span>&#160;</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table> -->
+
+                                            <!--[if (!mso)&(!IE)]><!-->
+                                        </div><!--<![endif]-->
+                                    </div>
+                                </div>
+                                <!--[if (mso)|(IE)]></td><![endif]-->
+                                <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="u-row-container" style="padding: 0px;background-color: transparent">
+                        <div class="u-row"
+                            style="Margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: #ffffff;">
+                            <div
+                                style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+                                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr style="background-color: #ffffff;"><![endif]-->
+
+                                <!--[if (mso)|(IE)]><td align="center" width="600" style="width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+                                <div class="u-col u-col-100"
+                                    style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                                    <div style="height: 100%;width: 100% !important;">
+                                        <!--[if (!mso)&(!IE)]><!-->
+                                        <div
+                                            style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;">
+                                            <!--<![endif]-->
+
+                                            <table style="font-family:'Lato',sans-serif;" role="presentation"
+                                                cellpadding="0" cellspacing="0" width="100%" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px;font-family:'Lato',sans-serif;"
+                                                            >
+
+                                                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                <tr>
+                                                                    <td style="margin: 10px 20px 0px;">
+                                                                <div class="top_header_sec">
+                                                                    <div style="width: 150px; max-width:175px; min-width:150px;">
+                                                                        <img src="https://dev-yuvamanthan.s3.ap-south-1.amazonaws.com/data/uploadInstituteLogo//1704690873860ymunlogo.png"
+                                                                            alt="Image" title="Image"
+                                                                            style="min-height: 40px;float: none;width: 80%;"
+                                                                            width="288.2" />
+                                                                    </div>
+      
+                                                                        <div style="width: 100%; text-align: end; margin-top: 10px;">
+                                                                            <span>Visit :</span> 
+                                                                            <span class="yuva_url"><a class="yuvamanthan_url" href="https://www.yuvamanthan.org/" target="_blank">www.yuvamanthan.org</a></span>
+                                                                        </div>
+                                                                </div>
+                                                                  
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div>
+                                                <!-- ---------------About Yuvamanthan start ------------------>
+                                                <div class="main_header">
+                                                    <h1 style="line-height: 1.25;margin-bottom: 20px; color: #000000;">Welcome to
+                                                        Yuvamanthan</h1>
+                                                </div>
+
+                                                <div class="inner_Title">
+                                                    <span style="font-size: 15px;">Transformative Experiential Learning programmes that recognise
+                                                        the potential and aspirations of young minds and develop
+                                                        knowledge with experience. Empowering India’s Vision 2047, where
+                                                        the youth can thrive, lead, and drive collective action towards
+                                                        a Viksit Bharat.</span>
+                                                </div>
+
+                                                <hr style="margin: 20px;" />
+
+                                                <!-- ---------------About Yuvamanthan End ------------------>
+                                                <div class="message_body">
+
+                                                    <h3 style="margin-bottom: 10px; font-weight: 500; color: #545454; font-family: 'Poppins';">Dear {{name}},</h3>
+                                                    <p style="margin-left:10px; color: #545454;font-family: 'Poppins'; font-size: 15px;"> It appears that you have enrolled for a slot that is not full. Please fill all slots or decrease the number of slots.For manage the slots. Please follow the link below:</p>
+                                                    <div style="margin-top: 10px;">
+
+                                                        <button class="register_btn">
+                                                            <a href={{Manage_slotLink}} target="_blank" >Manage Slot</a>
+                                                        </button>
+                                                    </div>
+                                                    <p
+                                                        style="font-size: 14px; line-height: 140%; margin-top: 20px; margin-bottom: 10px;">
+                                                        <span style="color: #3598db; line-height: 19.6px;"><a
+                                                                rel="noopener" href={{Manage_slotLink}}
+                                                                target="_blank" style="color: #3598db;"><span
+                                                                    style="font-size: 14px; line-height: 19.6px;"><em><span
+                                                                            style="font-size: 15px; line-height: 22.4px;">{{Manage_slotLink}}</span></em></span></a></span>
+                                                    </p>
+                                                    <p style="font-size: 14px; line-height: 140%;"><span
+                                                            style="font-size: 15px; line-height: 25.2px;font-weight:500; color: #545454; font-family: 'Poppins';">If
+                                                            the above link does not work, please copy and paste it into
+                                                            your web browser. Please note that the link is only valid
+                                                            for 10 Minutes.</span></p>
+
+
+                                                </div>
+                                                <hr style="margin: 20px;" />
+                                                <!-- --------------Footer Section Start -------------------------------->
+                                                <div class="inner_image">
+                                                    <img src="https://dev-yuvamanthan.s3.ap-south-1.amazonaws.com/data/uploadInstituteLogo//1704690873860ymunlogo.png"
+                                                        alt="Image" title="Image"
+                                                        style="min-height: 40px;float: none;width: 30%;"
+                                                        width="288.2" />
+
+                                                    <div class="powered"><span>Powered by SafeInSchool</span></div>
+                                                </div>
+
+                                                <div class="bottom_title">
+                                                    <span>SafeInSchool provides innovative solutions to transform and
+                                                        empower schools to be truly safe and meet and exceed safety
+                                                        standards. It aims to be the backbone of school safety by
+                                                        ensuring uniform safety processes that follow the Whole School
+                                                        Safety Approach in meeting government regulations. Our bouquet
+                                                        of services focussed on Learning, Certifications and compliance
+                                                        are built keeping in mind the latest regulatory requirements and
+                                                        ensuring that our partner schools get access to fail-safe
+                                                        procedures to evaluate and enhance their school’s safety
+                                                        standards.</span>
+                                                </div>
+
+
+                                                <div class="note_title">
+                                                    <span>NOTE: This is an automatically generated email - please do not
+                                                        reply</span>
+                                                </div>
+                                                <!-- --------------Footer Section End -------------------------------->
+
+
+                                            </div>
+
+                                            <!--[if (!mso)&(!IE)]><!-->
+                                        </div><!--<![endif]-->
+                                    </div>
+                                </div>
+                                <!--[if (mso)|(IE)]></td><![endif]-->
+                                <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+                            </div>
+                        </div>
+                    </div>
+
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
