@@ -28,6 +28,7 @@ async function postCategoryHandler(req, res) {
     checkCategory = await CATEGMODEL.findOne({ slug: req.body.slug });
     if (checkCategory) {
       return res
+      // console.log("HELLO EVERYTHING")
         .status(203)
         .json({ message: "category slug should be a unique value" });
     } else {
