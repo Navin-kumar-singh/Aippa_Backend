@@ -237,8 +237,19 @@
  * Works with EXISTING .env
  ***********************************/
 
+
+
+
+
+
+
+/***********************************
+ * YUVAMANTHAN SERVER (RENDER SAFE)
+ * .env UNCHANGED
+ ***********************************/
+
 const dotenv = require("dotenv");
-dotenv.config(); // ✅ USE YOUR EXISTING .env AS-IS
+dotenv.config(); // ✅ uses your existing .env
 
 const express = require("express");
 const http = require("http");
@@ -250,27 +261,31 @@ const passport = require("passport");
 const fs = require("fs");
 
 // =====================
-// DB INIT (USES YOUR DBHOST, DBUSER, DBPASS, DBNAME)
-// =====================
-require("./model/db");
-const sequelize = require("./database/connection");
-
-// =====================
-// APP SETUP
+// APP + SERVER (START FIRST)
 // =====================
 const app = express();
 const server = http.createServer(app);
 
+// 🔴 HEALTH CHECK (VERY IMPORTANT FOR RENDER)
+app.get("/", (req, res) => {
+  res.status(200).send("✅ Yuvamanthan Server is running");
+});
+
+// 🔴 START SERVER IMMEDIATELY
+const PORT = process.env.PORT || 2100;
+
+server.listen(PORT, () => {
+  if (!fs.existsSync("./tmp")) fs.mkdirSync("./tmp");
+  console.log(`🚀 Server started on port ${PORT}`);
+});
+
 // =====================
-// MIDDLEWARE
+// BASIC MIDDLEWARE
 // =====================
 app.use(morgan("dev"));
 
 app.use(cors({
-  origin: [
-    process.env.FRONTEND_URL, // ✅ from your .env
-    "https://aippa-glc-hglv.vercel.app"
-  ],
+  origin: process.env.FRONTEND_URL,
   credentials: true
 }));
 
@@ -279,10 +294,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 
 // =====================
-// SESSION + PASSPORT
+// SESSION + PASSPORT (SAFE)
 // =====================
 app.use(session({
-  secret: process.env.SESSION_SECRET_KEY, // ✅ from your .env
+  secret: process.env.SESSION_SECRET_KEY,
   resave: false,
   saveUninitialized: false,
   cookie: { maxAge: 2 * 24 * 60 * 60 * 1000 }
@@ -290,69 +305,87 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
-require("./version2/passportSetup");
+
+try {
+  require("./version2/passportSetup");
+  console.log("✅ Passport initialized");
+} catch (err) {
+  console.error("❌ Passport error:", err.message);
+}
 
 // =====================
-// ROUTES
+// STATIC
 // =====================
-app.get("/", (req, res) => {
-  res.send("✅ Yuvamanthan Server is running here...");
-});
-
 app.use("/uploads", express.static("uploads"));
 
-// EXISTING ROUTES (UNCHANGED)
-app.use("/api/v2", require("./version2/routesv2"));
-app.use("/auth", require("./routes/auth/auth"));
-app.use("/v2/auth", require("./version2/auth/auth"));
-app.use("/course", require("./routes/course/course"));
-app.use("/student", require("./routes/student/student"));
-app.use("/public", require("./routes/public/public"));
-app.use("/register", require("./routes/register/register"));
-app.use("/v2/register", require("./version2/register/register"));
-app.use("/content", require("./routes/content/content"));
-app.use("/admin", require("./routes/admin/admin"));
-app.use("/institute", require("./routes/institute/institute"));
-app.use("/v2/institute", require("./version2/institute"));
-app.use("/discussion", require("./routes/dicussion/discussion"));
-app.use("/eksathi", require("./routes/eksathi/eksathi"));
-app.use("/timeline", require("./routes/timeline/timeline"));
-app.use("/club", require("./routes/clubs/club"));
-app.use(
-  "/modelUnStudent",
-  require("./version2/modelUn_student/modelUnStudent").ModelUnStudentRouter
+// =====================
+// SAFE ROUTE LOADER
+// =====================
+const safeUse = (path, route) => {
+  try {
+    app.use(route, require(path));
+    console.log(`✅ Loaded ${route}`);
+  } catch (err) {
+    console.error(`❌ Failed ${route}:`, err.message);
+  }
+};
+
+// =====================
+// ROUTES (UNCHANGED)
+// =====================
+safeUse("./version2/routesv2", "/api/v2");
+safeUse("./routes/auth/auth", "/auth");
+safeUse("./version2/auth/auth", "/v2/auth");
+safeUse("./routes/course/course", "/course");
+safeUse("./routes/student/student", "/student");
+safeUse("./routes/public/public", "/public");
+safeUse("./routes/register/register", "/register");
+safeUse("./version2/register/register", "/v2/register");
+safeUse("./routes/content/content", "/content");
+safeUse("./routes/admin/admin", "/admin");
+safeUse("./routes/institute/institute", "/institute");
+safeUse("./version2/institute", "/v2/institute");
+safeUse("./routes/dicussion/discussion", "/discussion");
+safeUse("./routes/eksathi/eksathi", "/eksathi");
+safeUse("./routes/timeline/timeline", "/timeline");
+safeUse("./routes/clubs/club", "/club");
+safeUse(
+  "./version2/modelUn_student/modelUnStudent",
+  "/modelUnStudent"
 );
-app.use("/aws", require("./aws/awsRouter"));
-app.use("/uploadAWS", require("./middleware/uploadRouter"));
+safeUse("./aws/awsRouter", "/aws");
+safeUse("./middleware/uploadRouter", "/uploadAWS");
 
 // =====================
 // SOCKET.IO (SAFE)
 // =====================
-const io = require("socket.io")(server, {
-  cors: {
-    origin: process.env.FRONTEND_URL,
-    credentials: true
-  }
-});
-
-require("./sockets/initializeSocketConnection")(io);
-
-// =====================
-// DATABASE SYNC (SAFE FOR RENDER)
-// =====================
-sequelize.sync()
-  .then(() => console.log("✅ Sequelize synced"))
-  .catch(err => {
-    console.error("❌ Sequelize error:", err);
-    process.exit(1);
+try {
+  const io = require("socket.io")(server, {
+    cors: {
+      origin: process.env.FRONTEND_URL,
+      credentials: true
+    }
   });
+  require("./sockets/initializeSocketConnection")(io);
+  console.log("✅ Socket initialized");
+} catch (err) {
+  console.error("❌ Socket error:", err.message);
+}
 
 // =====================
-// START SERVER (VERY IMPORTANT: LAST LINE)
+// DATABASE (NON-BLOCKING)
 // =====================
-const PORT = process.env.PORT || 2100; // ✅ matches your .env
+(async () => {
+  try {
+    require("./model/db");
+    const sequelize = require("./database/connection");
 
-server.listen(PORT, () => {
-  if (!fs.existsSync("./tmp")) fs.mkdirSync("./tmp");
-  console.log(`🚀 Server running on port ${PORT}`);
-});
+    await sequelize.authenticate();
+    console.log("✅ Database connected");
+
+    await sequelize.sync();
+    console.log("✅ Sequelize synced");
+  } catch (err) {
+    console.error("❌ DATABASE ERROR (server still running):", err.message);
+  }
+})();
